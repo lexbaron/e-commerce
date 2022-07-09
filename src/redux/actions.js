@@ -98,7 +98,7 @@ export const addCartThunk = cartItem => {
         .then(res => dispatch(getCartThunk()))
         .catch(error => {
             console.log(error.response.data.message)
-         })
+        })
         .finally(() => dispatch(setIsLoading(false)))
     }
 }

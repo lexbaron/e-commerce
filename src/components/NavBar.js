@@ -35,7 +35,7 @@ const NavBar = () => {
                 setIsLoginOpen(false)
             })
             .catch(error => {
-               setLoginError(error.response.data.message)
+                setLoginError(error.response.data.message)
             })
             setIsLoginOpen(false)
     }
